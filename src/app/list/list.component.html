@@ -1,0 +1,21 @@
+<h2>Presidents of ireland</h2>
+
+<ul>
+    <li *ngFor="let president of presidentd">
+    {{ president }}<!--displaying data binding for arrray-->
+    </li>
+</ul>
+
+<ol>
+    @for(president of presidents;track president)
+    {
+        <li>{{ president }}</li><!--displaying data binding for arrray-->
+    }
+</ol>
+
+<ul>
+    @for(pres of mypresidents;track pres)
+    {
+        <li>{{ pres.name }}, {{ pres.term }}</li><!--displaying data binding for arrray-->
+    }
+</ul>
